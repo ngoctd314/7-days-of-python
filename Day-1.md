@@ -303,3 +303,28 @@ print(cubes)
 ```
 
 **Working with Part of a List**
+
+```py
+players = [f"player-{x}" for x in range(1, 6)]
+print(players[0:3])
+print(players[1:4])
+print(players[:4])
+print(players[2:])
+print(players[-3:])
+# If a third value is included, this tells Python how many items to skip between items is the specified range
+print(players[0:-1:2])
+```
+
+```py
+players = [f"player-{x}" for x in range(1, 6)]
+# To copy a list, you can make a slice that includes the entire original list by omitting the first index and the second index ([:])
+# This tells Python to make a slice that starts at the first item and ends with the last item, producing a copy of the entire list.
+cpPlayers = players[:]
+
+cpPlayers[0] = f"update-{cpPlayers[0]}"
+print(players)
+print(cpPlayers)
+```
+
+
+**Tuples**
