@@ -577,3 +577,15 @@ class Car:
 my_new_car = Car("audi", "a4", 2024)
 print(my_new_car.get_description_name())
 ```
+
+You can change an attribute's value in three ways: you can change the value directly through an instace, set the value through a method, or increment the value (and a certain amount to it) through a method.
+
+```py
+# The simplest way to modify the value of an attribute is to access the attribute directly through an instance. Here we set the odometer reading to 23 directly.
+my_new_car.odometer_reading = 10
+my_new_car.read_odometer()
+```
+
+Modifying an Attribute's Value Through a Method
+
+In can be helpful methods that update certain attributes for you. Instead of accessing the attribute directly, you pass the new value to a method that handles the updating internally.
